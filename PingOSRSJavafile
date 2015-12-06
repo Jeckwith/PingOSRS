@@ -1,0 +1,84 @@
+import java.io.*;
+
+import  org.apache.poi.hssf.usermodel.HSSFSheet;
+import  org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import  org.apache.poi.hssf.usermodel.HSSFRow;
+
+public class PingOSRS {
+ public static void main(String args[]) throws FileNotFoundException, IOException, InterruptedException {
+	 int currentLine = 1;
+	 
+	 Integer[] worldList = {1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21,
+			22, 25, 26, 27, 28, 29, 30, 33, 34, 35, 36, 37, 38, 41, 42, 43, 44,
+			45, 46, 49, 50, 51, 52, 53, 54, 57, 58, 59, 60, 61, 62, 65, 66, 67,
+			68, 69, 70, 73, 74, 75, 76, 77, 78, 81, 82, 83, 84, 85, 86, 93, 94};
+	 
+	 Integer[] pingList = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			 		0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			 		0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			 		0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			 		0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			 		0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+			 		0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		
+     String filename = "C:/PingOSRS/PingOutput.xls" ;
+     HSSFWorkbook workbook = new HSSFWorkbook();
+     HSSFSheet sheet = workbook.createSheet("PingOSRS");  
+
+     HSSFRow rowhead = sheet.createRow((short)0);
+     rowhead.createCell(0).setCellValue("World");
+     rowhead.createCell(1).setCellValue("Ping");
+     
+	 try (BufferedReader br = new BufferedReader(new FileReader("C:\\PingOSRS\\pings.txt"))) {
+		    String line;
+		    String lineSub;
+		    while ((line = br.readLine()) != null) {
+		    	try {
+
+		    		if(line.length()==10){
+		    			lineSub = line.substring(5, 7);
+		    		} else if (line.length()==11) {
+		    			lineSub = line.substring(5, 8);
+		    		} else {
+		    			lineSub = line;
+		    		}
+		    		
+		            pingList[currentLine-1] = Integer.parseInt(lineSub);
+		            
+		            currentLine += 1;
+
+		        } catch ( Exception ex ) {
+		            System.out.println(ex);
+		        }
+		    }
+	 	} catch (IOException e) {
+			e.printStackTrace();
+		}
+	 
+	 for (int n = 0; n < 70; n++) {
+	        for (int m = 0; m < 6 - n; m++) {
+	            if ((worldList[m].compareTo(worldList[m + 1])) > 0) {
+	                int swapInt = worldList[m];
+	                worldList[m] = worldList[m + 1];
+	                worldList[m + 1] = swapInt;
+	                swapInt = pingList[m];
+	                pingList[m] = pingList[m + 1];
+	                pingList[m + 1] = swapInt;
+	            }
+	        }
+	    }
+	 
+	 for(int i=0; i<70; i++){
+		 HSSFRow row = sheet.createRow((short)(i+1));
+	     row.createCell(0).setCellValue(worldList[i]);
+	     row.createCell(1).setCellValue(pingList[i]);
+	 }
+	 
+     FileOutputStream fileOut = new FileOutputStream(filename);
+     workbook.write(fileOut);
+     fileOut.close();
+     
+	 System.out.println("Done!");
+ 	}
+}
+
