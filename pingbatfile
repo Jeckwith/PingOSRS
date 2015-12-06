@@ -1,0 +1,81 @@
+@echo off
+cd ..
+ECHO Please wait up to 5 minutes while pings are calculated
+>c:\PingOSRS\pings.txt (
+ping oldschool1.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool2.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool3.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool4.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool5.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool6.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool8.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool9.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool10.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool11.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool12.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool13.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool14.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool16.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool17.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool18.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool19.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool20.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool21.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool22.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool25.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool26.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool27.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool28.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool29.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool30.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool33.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool34.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool35.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool36.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool37.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool38.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool41.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool42.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool43.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool44.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool45.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool46.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool49.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool50.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool51.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool52.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool53.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool54.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool57.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool58.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool59.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool60.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool61.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool62.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool65.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool66.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool67.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool68.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool69.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool70.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool73.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool74.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool75.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool76.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool77.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool78.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool81.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool82.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool83.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool84.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool85.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool86.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool93.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+ping oldschool94.runescape.com | for /f "skip=3 tokens=5" %%a in ('findstr Reply') do @echo %%a
+)
+ECHO Done! You may now exit this window.
+
+
+
+
+
